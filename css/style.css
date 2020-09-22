@@ -31,7 +31,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #17ded7;
   color: black;
 }
 
@@ -55,7 +55,18 @@ body {
 }
 
 .bannerContent {
-  padding: 180px 40px;
+  padding: 130px 70px;
   text-decoration: black;
+}
+
+.textoBanner {
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  text-decoration: black;
+}
+
+button {
+  size: 300px;
 }
 
