@@ -59,7 +59,11 @@ body {
 }
 
 .contentFlip {
-  padding: 0 320px;
+  /* padding: 0 320px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
   }
 
 .flip-card {
