@@ -35,19 +35,6 @@ body {
   color: black;
 }
 
-/* Style the content */
-.content {
-  padding: 40px 10px 0 10px;
-  background-color: rgb(138, 212, 241);
-}
-
-/* Style the footer */
-.footer {
-  background-color: rgb(138, 212, 241);
-  padding: 20px;
-  text-align: center;
-}
-
 .bannerTop {
   height: 382px;
   background-image: url("../imagens/banner1Opaco.png");
@@ -66,8 +53,13 @@ body {
   text-decoration: black;
 }
 
+/* Style the content */
+.content {
+  padding: 40px 0 50px 0;
+}
+
 .contentFlip {
-  padding: 0 300px;
+  padding: 0 320px;
   }
 
 .flip-card {
@@ -112,6 +104,15 @@ body {
   transform: rotateY(180deg);
 }
 
-.texto {
+.bannerParceiro {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Style the footer */
+.footer {
+  background-color: rgb(0, 168, 235);
+  padding: 20px;
   text-align: center;
 }
+
