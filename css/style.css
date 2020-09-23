@@ -66,14 +66,8 @@ body {
   text-decoration: black;
 }
 
-button {
-  size: 300px;
-}
-
 .contentFlip {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  display: block;
   justify-content: center;
   align-items: center
   }
@@ -118,4 +112,8 @@ button {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+}
+
+.texto {
+  text-align: center;
 }
