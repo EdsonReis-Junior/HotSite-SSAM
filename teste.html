@@ -19,33 +19,33 @@
     <link rel="alternate" type="application/rss+xml" title="Feed de notícias" href="/feed">
 
     <!-- apontamento do arquivo css -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/teste.css">
 
     <!-- tela responsiva para todo aparelho -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
      
-    <!-- Usando Recursos Bootstrap -->
-    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+     <!-- Usando Recursos Bootstrap -->
+     <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 
-    <!-- Utilizando Recursos JQuery para mudança Nav  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    
-</head>
-
-<body>
-    
-<script>
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-      if (scroll >= 40) {               // se rolar 40px ativa o evento
-        $("#topnav").addClass("ativo");    //coloca a classe "ativo" no id=menu
-      } else {
-        $("#topnav").removeClass("ativo"); //se for menor que 40px retira a classe "ativo" do id=menu
-      }
-    });
-</script>
-
-    <div id="topnav">
+     <!-- Utilizando Recursos JQuery para mudança Nav  -->
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     
+ </head>
+ 
+ <body>
+     
+ <script>
+ $(window).scroll(function() {    
+     var scroll = $(window).scrollTop();
+       if (scroll >= 40) {               // se rolar 40px ativa o evento
+         $("#topnav").addClass("ativo");    //coloca a classe "ativo" no id=menu
+       } else {
+         $("#topnav").removeClass("ativo"); //se for menor que 40px retira a classe "ativo" do id=menu
+       }
+     });
+ </script>
+ 
+     <div id="topnav">
         <img src="imagens/logo.png" alt="Logo SSAM" width=250 height=50>
         <a href="http://www.ttquality.com.br/" target="_blank">Sobre</a>
         <a href="./contato.html">Fale Conosco</a>
@@ -65,19 +65,17 @@ $(window).scroll(function() {
 
     <div class="content">       
         <h1 style="text-align: center;"><b>Principais Funcionalidades</b></h1>
+        <h3 style="text-align: center;">Conheça as ferramentas de uso do nosso sistema</h3>
         <!-- Begin Flip card -->
         <div class="contentFlip">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="imagens/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="imagens/imagensFlip/prancheta2.png" alt="Ordem de Serviço" style="width:300px;height:300px;">
                     </div>
                     <a style="display: block;" href="./funcionalidades.html">
                     <div class="flip-card-back">
-                        <!-- <a href="./funcionalidades.html" class="btn btn-success btn-lg">SAIBA MAIS</a> -->
-                        <h1>Ordem de Serviço</h1> 
-                        <p>Architect & Engineer</p> 
-                        <p>We love that guy</p>
+                        <p>Crie de maneira<br /><b>fácil</b> e <b>intuitiva</b> suas ordens de serviço em garantia e fora de garantia</p> 
                     </div>
                     </a>
                 </div>
@@ -85,13 +83,11 @@ $(window).scroll(function() {
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="imagens/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="imagens/imagensFlip/caixa2.png" alt="Controle de Caixa" style="width:300px;height:300px;">
                     </div>
                     <a href="./funcionalidades.html">
                     <div class="flip-card-back">
-                        <h1>Fluxo de Caixa</h1> 
-                        <p>Architect & Engineer</p> 
-                        <p>We love that guy</p>
+                        <p>Tenha o <b>controle absoluto</b> de movimentações de entrada e saída de valores do caixa</p> 
                     </div>
                     </a>
                 </div>
@@ -99,24 +95,20 @@ $(window).scroll(function() {
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="imagens/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="imagens/imagensFlip/NF.png" alt="Emissão de Notas Fiscais" style="width:300px;height:300px;">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Emissão de Nota Fiscal</h1> 
-                        <p>Architect & Engineer</p> 
-                        <p>We love that guy</p>
+                        <p>Integração com <b>SEFAZ</b> para <b>gerenciar</b> e <b>controlar</b> emissão de notas fiscais</p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="imagens/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="imagens/imagensFlip/relatorio2.png" alt="Relatórios Personalizáveis" style="width:300px;height:300px;">
                     </div>
-                    <div class="flip-card-back">
-                        <h1>Relatórios Personalizáveis</h1> 
-                        <p>Architect & Engineer</p> 
-                        <p>We love that guy</p>
+                    <div class="flip-card-back"> 
+                        <p>Crie diversos relatórios de acordo com suas <b>preferências</b> e <b>necessidades</b></p>
                     </div>
                 </div>
             </div>			
@@ -125,61 +117,54 @@ $(window).scroll(function() {
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="imagens/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="imagens/imagensFlip/venda2.png" alt="Gestão de Vendas" style="width:300px;height:300px;">
                     </div>
-                    <div class="flip-card-back">
-                        <h1>Controle de Caixa</h1> 
-                        <p>Architect & Engineer</p> 
-                        <p>We love that guy</p>
+                    <div class="flip-card-back"> 
+                        <p>Crie <b>orçamentos</b><br />e realize suas<br /><b>vendas</b> de uma forma simples rápida e prática</p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="imagens/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="imagens/imagensFlip/estoque2.png" alt="Controle de Estoque" style="width:300px;height:300px;">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Controle de Estoque</h1> 
-                        <p>Architect & Engineer</p> 
-                        <p>We love that guy</p>
+                        <p>Tenha o <b>controle<br /> total</b> sobre todas as <b>movimentações</b> de mercadorias em seu estoque</p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="imagens/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="imagens/imagensFlip/gspn2.png" alt="GSPN" style="width:300px;height:300px;">
                     </div>
                     <div class="flip-card-back">
-                        <h1>Comunicação GSPN</h1> 
-                        <p>Architect & Engineer</p> 
-                        <p>We love that guy</p>
+                        <p>Integração com<br />a interface da<br /> <b>Samsung GSPN</b> para facilitar <b>importação</b> de ordens de<br /> serviço</p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="imagens/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="imagens/imagensFlip/mais2.png" alt="Mais..." style="width:300px;height:300px;">
                     </div>
                     <div class="flip-card-back">
-                        <h1>E Muito Mais...</h1> 
-                        <p>Gestão Comercial</p> 
-                        <p>We love that guy</p>
+                        <p>Clique aqui para conhecer as <b>demais funcionalidades</b> existentes em nosso sistema</p>
                     </div>
                 </div>
             </div>		
         </div>
         <!-- End Flip card -->
 
-        <div class="bannerParceiro">
-            <img src="./imagens/bannerParceiros.png" alt="Parceiros" style="width: 100%;">
+        <div class="bottomPage">
+            <img src="imagens/bannerSuporte.png" alt="banner Suporte" style="width: 100%;">
         </div>
     </div>
 
     <div class="footer">
         <h3>Total Quality Informática &copy; Todos os Direitos Reservados 2020</h3>
+        <h6><div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" target="_blank" title="Flaticon">www.flaticon.com</a></div></h6>
     </div>
 </body>
 
