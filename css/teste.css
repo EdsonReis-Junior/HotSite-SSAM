@@ -1,168 +1,174 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Comic Sans MS', Comic Sans, cursive
-  }
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', Comic Sans, cursive
+}
+
+body {
+  margin: 0;
+}
+
+#topnav {
+  background-color: transparent !important;
+  padding: 1.5rem 1rem;
+  transition: all 500ms linear;
+  /* inicio posição fixa do menu */
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  /* fim posição fixa do menu */
+  overflow: hidden;
+}
+
+#topnav.ativo {
+  background-color:  rgba(0, 168, 235, 0.8) !important;
+  padding: .5rem 1rem;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  margin-left: 5%;
+  padding-right: 5%;
+}
+
+/* Style the topnav links */
+#topnav a {
+  float: right;
+  display: block;
+  color: black;
+  font-size: larger;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Change color on hover */
+#topnav a:hover {
+  background-color: #17ded7;
+  color: black;
+} 
+
+.bannerTop {
+  height: 600px;
+  background-image: url("../imagens/banner1OpacoPS.png");
+  /* background-size: cover; */
+  background-size: 100% 100%;
+}
+
+.bannerContent {
+  padding: 130px 70px;
+  text-decoration: black;
+}
+
+.textoBanner {
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  text-decoration: black;
+}
+
+/* Style the content */
+.content {
+  padding: 40px 0 50px 0;
+}
+
+.contentFlip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: inline-block;
+  margin: 5px 5px 5px 5px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back p {
+  font-size: 180%;
+}
+
+.flip-card-back {
+  background-color: rgb(0, 168, 235);
+  color: black;
+  transform: rotateY(180deg);
+  border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.308);
+  padding-top: 12%;
+}
+
+.bottomPage {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+/* Formulário de Contato Style */
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 300px;
+}
+
+input[type=submit]:hover {
+  background-color: #5cdfe9;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: rgb(0, 168, 235);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: black;
+}
   
-  body {
-    margin: 0;
-  }
   
-  #topnav {
-    background-color: transparent !important;
-    padding: 1.5rem 1rem;
-    transition: all 500ms linear;
-    /* inicio posição fixa do menu */
-    position: fixed;
-    width: 100%;
-    z-index: 9;
-    /* fim posição fixa do menu */
-    overflow: hidden;
-    /* background-color: #17ded7; */
-    background-color: transparent;
-  }
-  #topnav.ativo {
-    background-color:  rgba(0, 168, 235, 0.8) !important;
-    padding: .5rem 1rem;
-  }
-  
-  /* Style the topnav links */
-  #topnav a {
-    float: right;
-    display: block;
-    color: black;
-    font-size: large;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Change color on hover */
-  #topnav a:hover {
-    background-color: #17ded7;
-    color: black;
-  } 
-  
-  .bannerTop {
-    min-height: 600px;
-    background-image: url("../imagens/banner1OpacoPS.png");
-    background-size: cover;
-  }
-  
-  .bannerContent {
-    padding: 130px 70px;
-    text-decoration: black;
-  }
-  
-  .textoBanner {
-    width: 500px;
-    height: 100px;
-    text-align: center;
-    text-decoration: black;
-  }
-  
-  /* Style the content */
-  .content {
-    padding: 40px 0 50px 0;
-  }
-  
-  .contentFlip {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3%;
-  }
-  
-  .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    display: inline-block;
-    margin: 5px 5px 5px 5px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    color: black;
-  }
-  
-  .flip-card-back p {
-    font-size: 180%;
-  }
-  
-  .flip-card-back {
-    background-color: rgb(0, 168, 235);
-    color: black;
-    transform: rotateY(180deg);
-    border-radius: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.308);
-    padding-top: 12%;
-  }
-  
-  .bottomPage {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  
-  /* Formulário de Contato Style */
-  input[type=text], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 300px;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #5cdfe9;
-  }
-  
-  .container {
-    border-radius: 5px;
-    padding: 20px;
-  }
-  
-  /* Style the footer */
-  .footer {
-    background-color: rgb(0, 168, 235);
-    padding: 20px;
-    text-align: center;
-  }
-  
-    
-    
-  
-  
+

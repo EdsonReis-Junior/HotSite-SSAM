@@ -44,7 +44,7 @@ body {
 .bannerTop {
   height: 600px;
   background-image: url("../imagens/banner1OpacoPS.png");
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .bannerContent {
