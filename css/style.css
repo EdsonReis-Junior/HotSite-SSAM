@@ -164,6 +164,12 @@ input[type=submit]:hover {
 .footer a {
   color: black;
 }
-  
-  
 
+/* STYLE CSS DAS SUBPÁGINAS */
+.funcionalidades {
+  padding: 5%;
+  background-color: rgb(0, 168, 235);
+  border-style: dotted;
+  margin-top: 2%;
+  border-radius: 5%;
+}

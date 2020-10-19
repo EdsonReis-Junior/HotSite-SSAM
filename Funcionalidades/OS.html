@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Nome da ABA no navegador -->
+    <title>SSAM</title>
+
+    <!-- Tags Meta (Aparecer no google) -->
+    <meta charset="utf-8" />
+    <meta name="keywords" content="wordpress, desenvolvimento web, seo, blogosfera">
+    <meta name="description" content="Este é um exemplo de estrutura de um site HTML.">
+    <meta name="author" content="Edson dos Reis Junior - Helber Wagner">
+    <meta name="robots" content="index,follow">
+
+    <!-- Links -->
+
+    <!-- link para o feed -->
+    <link rel="alternate" type="application/rss+xml" title="Feed de notícias" href="/feed">
+
+    <!-- apontamento do arquivo css -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- tela responsiva para todo aparelho -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Usando Recursos Bootstrap -->
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <!-- Utilizando Recursos JQuery para mudança Nav  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 40) {               // se rolar 40px ativa o evento
+                $("#topnav").addClass("ativo");    //coloca a classe "ativo" no id=menu
+            } else {
+                $("#topnav").removeClass("ativo"); //se for menor que 40px retira a classe "ativo" do id=menu
+            }
+        });
+    </script>
+
+    <div id="topnav">
+        <img src="../imagens/logo.png" alt="Logo SSAM" width=250 height=50>
+        <a href="http://www.ttquality.com.br/" target="_blank">Sobre</a>
+        <a href="../contato.html">Fale Conosco</a>
+        <a href="../funcionalidades.html">Funcionalidades</a>
+        <a href="../parceiros.html">Parceiros</a>
+        <a href="../index.html">Home</a>
+    </div>
+
+    <div class="bannerTop">
+        <div class="bannerContent">
+            <div class="textoBanner">
+                <h1>Crie e gerencie suas ordens de serviço de maneira fácil e prática</h1>
+                <a href="../funcionalidades.html" class="btn btn-success btn-lg">SAIBA MAIS</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 style="text-align: center;"><b>Entenda melhor sobre o gerenciamento de ordens de serviço</b></h1>
+        <div class="funcionalidades">
+            <div style="background-color: lightblue;">
+                <h1>texto aqui</h1>
+                <h1>texto aqui</h1>
+                <h1>texto aqui</h1>
+            </div>
+            <div style="background-color: blue; text-align: right;">
+                <h1>texto aqui</h1>
+                <h1>texto aqui</h1>
+                <h1>texto aqui</h1>
+            </div>
+            <div style="background-color: lightblue;">
+                <h1>texto aqui</h1>
+                <h1>texto aqui</h1>
+                <h1>texto aqui</h1>
+            </div>
+        </div>
+        <div class="bottomPage">
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Total Quality Informática &copy; Todos os Direitos Reservados 2020</h3>
+        <h6>
+            <div>Icons made by <a href="https://www.flaticon.com/br/autores/freepik" target="_blank"
+                    title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" target="_blank"
+                    title="Flaticon">www.flaticon.com</a></div>
+        </h6>
+    </div>
+</body>
+
+</html>
