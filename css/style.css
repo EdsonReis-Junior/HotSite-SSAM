@@ -167,9 +167,8 @@ input[type=submit]:hover {
 
 /* STYLE CSS DAS SUBPÁGINAS */
 .funcionalidades {
-  padding: 5%;
-  background-color: rgb(0, 168, 235);
-  border-style: dotted;
+  padding-left: 1%;
+  padding-right: 1%;
   margin-top: 2%;
-  border-radius: 5%;
+  overflow: hidden;
 }
