@@ -119,10 +119,10 @@ body {
   padding-top: 12%;
 }
 
-.bottomPage {
+/* .bottomPage {
   margin-top: 5%;
   margin-bottom: 1%;
-}
+} */
 
 /* Formulário de Contato Style */
 input[type=text], textarea {
